@@ -1,0 +1,272 @@
+
+/*Gælder for alt. Får billeder og bokse til at gå helt ud til kanten*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: white;
+}
+
+/* --------------------------------opdeler siderne------------------------------- */
+.opdeler{
+    height: 400px;
+    background-color: rgb(252, 252, 252);
+}
+
+/* -------------------------------------------------------------------------GENEREL TEKST-------------------------------------------------- */
+
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 55px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color:rgb(66, 66, 67)
+    }
+    
+h2{
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: lighter;
+    color:rgb(50, 51, 41);
+}
+
+h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+    color:rgb(66, 66, 67)
+    
+}
+
+p{
+    font-family:'Lato', sans-serif;
+    font-size: 17px;
+    line-height: 1.8;
+    color:rgb(66, 66, 67)
+    }
+
+.rubrik{
+    font-size: 22px;
+    font-style: italic;
+}
+
+
+
+/* -------------------------------------------------------------------header---------------------------------------------------------- */
+
+/* regler for alt i header: */
+header{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 999;
+    font-family:'Lato', sans-serif;
+    background-color: rgb(252, 252, 252);
+}
+
+#logo{
+    width: 45%;
+    display: flex;
+    justify-content: start;
+    padding-left: 50px;
+}
+
+/* Linksne i headeren: plads omkring link, på midten af y-aksen */
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav a{
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration:none;
+    color: black;
+}
+
+header nav a:hover{
+    color: rgb(146, 146, 146);
+}
+
+
+/* ------------------------------------------------------------------------main---------------------------------------------------- */
+
+
+main{
+    padding-top: 100px;
+    padding-bottom: 0px;
+    }
+
+/* --------------------------------forsidesiden------------------------------- */
+
+/* grøn boks: størrelse, farve, placering osv*/
+.grønboks{
+background-color: rgb(50, 51, 41);
+width: 100%;
+height: 262px;
+padding-top: 510px;
+display: flex;
+justify-content:flex-start;
+}
+
+
+.boksbagforside{
+    display: flex;
+    align-items: center;
+    background-color: rgb(219, 217, 216);
+}
+
+.grønboks h1{
+    font-size: 75px;
+    color: rgb(252, 252, 252);
+}
+
+
+
+/* --------------------------------oversigtsiden------------------------------- */
+
+/* boksen over kortene med overskrift */
+.boks-over-kort{
+    height: 150px;
+    background-color: rgb(219, 217, 216);
+    padding: 30px;
+
+}
+
+
+/* grå boks bag kort: placering af de fire bokse i den boks */
+.kort{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(219, 217, 216);
+}
+
+/* fjerner stregen under linksne på kortne */
+.kort a{
+    text-decoration: none;
+    color: black;
+}
+
+/* de grønne bokse hvor teksten står */
+.kort section{
+    text-align: center;
+    width: 350px;
+    height: 500px;
+    background-color: rgb(50, 51, 41);
+}
+
+
+/* billederne */
+.billed{
+    width: 100%;
+    height: 350px;
+    background-color: white;
+}
+
+.kort p{
+    color: rgb(252, 252, 252);
+}
+
+.kort h3{
+    color: rgb(252, 252, 252);
+}
+
+.kort h2{
+    color: rgb(252, 252, 252);
+}
+
+/* --------------------------------bæredygtighedsiden------------------------------- */
+
+.boksoverskrift{
+    margin-top: 150px;
+    margin-left: 400px;
+    margin-right: 300px;
+}
+
+.boksbæredygtighed{
+    margin-bottom: 150px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+/* --------------------------------stolesiden------------------------------- */
+
+.boksbag{
+    display: flex;
+}
+
+.gråboks{
+    padding: 80px;
+    background-color: rgb(219, 217, 216);
+    width: 100%;
+}
+
+.lang-boks{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+
+/* --------------------------------guidesiden------------------------------- */
+
+.boks{
+    background-color: rgb(219, 217, 216);
+    display: flex;
+}
+
+.boksgrøn{
+    background-color: rgb(50, 51, 41);
+    width: 50%;
+    padding: 80px;
+}
+
+
+.boksgrøn h1{
+    color: rgb(219, 217, 216);
+}
+.boksgrøn h3{
+    color: rgb(219, 217, 216);
+}
+.boksgrøn p{
+    color: rgb(219, 217, 216);
+}
+
+
+
+/* ------------------------------------------------------------------------footer---------------------------------------------------- */
+
+footer{
+    height: 350px;
+    background-color: rgb(252, 252, 252);
+}
+
+.lang-boks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.socialemedier {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
